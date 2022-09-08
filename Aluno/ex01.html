@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    
+<style>
+    body {
+              background-color: rgb(132, 204, 230);
+              color: black;
+              font:small-caption 30pt Georgia
+         }
+
+         h2 {
+             background-color: darkseagreen;
+             color: black;
+           }
+</style>
+</head>
+<body>
+   <h1>Lista de Compras!</h1> 
+    <h2>Itens:</h2>
+    <p>
+     <script>
+        
+        var mercado = window.prompt('Foi ao mercado hojê?')
+        var itens = window.prompt('Quantos itens tem em sua lista hoje?')
+        var produto1 = window.prompt('Produto 1?')
+        var valor1 = Number(window.prompt('Qual valor custou seu produto1?'))
+        var produto2 = window.prompt('Produto 2?')
+        var valor2 = Number(window.prompt('Qual valor custou seu produto2?')) 
+        window.document.write(`Sua compra hoje foi: <br> ${produto1}; <br> ${produto2}.<br>` )
+        window.document.write(`Valor total da sua compra de hoje:`)
+        var total = valor1 + valor2
+         document.write(`${total}`)
+    </script>
+    </p>
+    
+
+    
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de satidfação</title>
+    <style>
+        body {
+               background-color:darkgray;
+               color: darkgreen;
+               font:smaller  20pt Arial
+               }
+                h2{
+                    color: midnightblue;
+                }
+
+   </style>
+</head>
+
+<body>
+    <h1>Pesquisa de satisfação!</h1>
+    <h2>A seguir respondera algumas peguntas aleatórias sobre você mesmo!</h2>
+        <Script>
+       
+        window.alert('Responda abaixo:')
+         var nome = window.prompt('Qual seu nome ?')
+         var sobrenome = window.prompt('Qual seu sobrenome?')
+         var idade = window.prompt('Qual sua idade?')
+         var cidade = window.prompt('Qual a cidade você reside?')
+         var bairro = window.prompt('Qual bairro fica sua casa?')
+         var casa = window.prompt('Qual número de sua casa?')
+         window.alert(`${nome} ${sobrenome}, sua pesquisa ja foi 50% respondida, então vamos lá`)
+        var estado = window.prompt('Qual seu estado civil?')
+        var filhos = window.prompt('Você possui filhos?')
+        var quantos = window.prompt('Quanos filhos?')
+        var escolaridade = window.prompt('Qual sua escolaridade?')
+        var cor = window.prompt('Qual sua cor?')
+        var pais = window.prompt('Qual seu pais de origem?')
+        window.alert(`obrigada por responder esta pesquisa de satisfação, ${nome} ${sobrenome}!`)
+        document.write(`Segue respostas:<br> <br> ${nome} ${sobrenome}; <br>`)
+        document.write(`${idade}; <br> ${cidade}; <br> ${bairro}; <br> ${casa}; <br>`)
+        document.write(`${estado}; <br> ${filhos}; <br> ${quantos}; <br>`)
+        document.write(`${escolaridade}; <br> ${cor}; <br> ${pais}.`)
+        
+        </Script>
+</body>
+</html>
