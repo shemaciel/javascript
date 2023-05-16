@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+</head>
+<body>
+  <h1>Sobre sua cidade</h1>  
+  <p>Em qual cidade você nasceu?</p>
+  <input type="text" name="cidade" id="cidade">
+  <input type="button" value="Descubra" onclick="verificar()">
+  <div id="resu">
+  </div>
+  <script>
+    function verificar(){
+        var cidade = window.document.getElementById('cidade')
+        var resultado = window.document.getElementById('resu')
+        resultado.innerHTML = `<p>Você é natural de ${'cidade.value'}!</p>`
+        if (cidade.value == 'Caraguatatuba'){ 
+            resultado.innerHTML = `Nascido na ${'cidade'} então voce é caiçara`} 
+        else {
+            resultado.innerHTML = `<p> Nacidos em outra ${'cidade'}, então você não é caiçara! </p>`
+            }
+       
+
+    }
+    
+  </script>
+
+
+</body>
+</html>

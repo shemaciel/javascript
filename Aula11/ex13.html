@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+</head>
+<body>
+    <h1>America chip, sua Cidadania!</h1>
+   
+     <h2>Informação do Senso:</h2> 
+     Qual país de origem ?
+     <input type="text" name="pais" id="pais">
+     <input type="button" value="verificar" onclick="descobrir()">
+     <div id="res"></div>
+     
+     <script>
+
+        function descobrir() {
+            var pais = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<p> Você é origem do ${pais.value}</p>`
+            
+            if (pais.value == 'Brasil'){
+            res.innerHTML = `<p>Vivendo no ${'pais'} você é Brasileiro </p>`
+             } else {
+            res.innerHTML = `<p>Vivendo no ${'pais'} você é Estrangeiro </p>`
+        }
+        
+    }
+       
+       
+     </script>
+
+</body>
+</html>

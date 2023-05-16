@@ -8,21 +8,25 @@
 </head>
 <body>
   <h1>Sistema de Informação</h1> 
-   Qual país de origem <input taype="Number" name="txtp" id="txtp">
-   <input type="button" value="verificar" onclick="calcular()">
-   <div id="res">
-
-   </div>
+   Vivendo em: 
+   <input type="text" name="txtpais" id="txtpais"> <!--caixa onde vai digitar seu pais-->
+   <input type="button" value="verificar" onclick="descobrir()"> <!--caixa do botao-->
+   <div id="resposta"></div>
    <script>
-        function calcular() {
-            var txtp = window.document.querySelector('inpt#txtp')
-            var res = window.document.querySelector('div#res')
-            var p = Number(txtp.value)
-            res.innerHTML = `<p>Qual seu país?</p>`
-            if (pías!= 'Brasil') {
-            res.innerHTML =+ `<p> voce é Estrangeiro</p>`
-            }
-            res.innerHTML += `<p>Voc~e é Brasileiro</p>`
+        function descobrir() {
+            var dentroDaCaixa = window.document.getElementById('txtpais').value
+            //console.log(dentroDaCaixa)
+            var resposta = window.document.getElementById('resposta')
+          // resposta.innerHTML = `<p>Sua origem é:</p>`
+                 if (dentroDaCaixa == 'Brasil') {
+                    resposta.innerHTML = `<p>Você é BRASILEIRO</p>`
+                      //console.log('IGUAL')
+               } else {
+                   resposta.innerHTML = `<p>Você é ESTRANGEIRO</p>`
+                    //console.log('DIFERENTE')
+            } 
+           
+           
         }
 
 
