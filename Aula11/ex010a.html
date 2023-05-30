@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siatema de Eleição</title>
+</head>
+<body>
+ <h1>Siatemas para as  Eleições!</h1>
+ <p>Para votar é necesário ter a idade mínima de 16 anos!</p>
+ Qual sua idade? <input type="number" name="txtidade" id="txtidade">anos.
+  <input type="button" value="Analisar" onclick="verificar()">
+  <div id="res">
+
+  </div>
+
+  <script>
+    var txtid = window.document.querySelector('input#txtidade')
+    var res = window.document.querySelector('id#res')
+    var idade = Number(txtid.value)
+    
+    function verificar() {
+    
+    res.innerHTML = `<p>Sua idade é de ${idade}</p>`
+    if (idade > 16) {
+        res.innerHTML += `<p> Você não pode votar`
+    }
+    res.innerHTML += `<p>Mantenha sempre seu título atualizado</p>`  
+}
+
+
+  </script>
+
+</body>
+</html>
